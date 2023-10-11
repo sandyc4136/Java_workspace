@@ -3,6 +3,7 @@ public class Inheritancee {
     Second s=new Second();
     s.print();
     s.myFun();
+    System.out.println(s.a);
  }  
 }
 class first{
