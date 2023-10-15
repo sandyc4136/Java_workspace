@@ -2,6 +2,8 @@ public class AbstractMethodDemo {
     public static void main(String args[]){
         new Square().calArea();
         new Circle().calArea();
+        Shape s=new Circle(); // Parent ref type = child class object
+        s.calArea();  // ok as it binds calArea() of Circle class to its parent Shape class
     }
 }
 abstract class Shape
