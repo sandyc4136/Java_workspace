@@ -11,14 +11,14 @@ public class MultipleInterfaceDemo {
 interface MyInterface1
 {
 	void myFun1();
-	// void fun1();
+	void fun();
 	
 }
 
 interface MyInterface2
 {
 	void myFun2();
-	// void fun2();
+	void fun();
 }
 
 interface MyInterface3 extends MyInterface1,MyInterface2
@@ -28,7 +28,7 @@ interface MyInterface3 extends MyInterface1,MyInterface2
 }
 class Demo implements MyInterface3
 {
-	//It will have to implement three methods - myFun(),fun1() and fun2().
+	//It will have to implement three methods - myFun1(), myFun2() and fun().
     public void myFun1(){
         // codde
         System.out.println("myFun1() of MyInterface1");
