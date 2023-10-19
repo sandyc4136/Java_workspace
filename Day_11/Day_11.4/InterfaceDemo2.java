@@ -1,4 +1,4 @@
-import java.util.concurrent.SynchronousQueue;
+
 
 public class InterfaceDemo2 {
     public static void main(String args[]){
@@ -6,7 +6,7 @@ public class InterfaceDemo2 {
         t.fun1();
         t.myFun1();
         t.fun2();
-        t.myFun3();
+        // t.myFun3();
     }
 }
 interface MyInterface1{
@@ -29,8 +29,8 @@ class Second extends First implements MyInterface1,MyInterface2{
     }
 }
 class Third extends Second{
-    void myFun3(){
-        System.out.print("myFun3() of Third");
+    public void fun2(){
+        System.out.print("fun2() of Third");
     }
 }
 
